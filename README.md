@@ -13,6 +13,8 @@
 
 **IMPORTANT: This project is currently in active development. Features may change, and bugs may exist. Use at your own risk.**
 
+**STORAGE REQUIREMENT: This project requires approximately 10-15 GB of disk space after installation (including dependencies and AI models).**
+
 [Features](#features) • [Installation](#installation) • [Usage](#usage) • [Requirements](#system-requirements) • [Contributing](#contributing)
 
 </div>
@@ -121,8 +123,8 @@
 - **RAM**: 16 GB
 - **GPU**: NVIDIA GPU with 8GB VRAM (GTX 1080 / RTX 2060 or better)
 - **CUDA**: 12.9
-- **Storage**: 10 GB free space (minimum installation)
-  - **Total after installation**: ~15-20 GB (including all dependencies and AI models)
+- **Storage**: 15+ GB free space required
+  - **TOTAL PROJECT SIZE AFTER INSTALLATION: ~10-12 GB** (basic installation with essential models)
 - **Python**: 3.10 or 3.11
 
 ### **RECOMMENDED FOR BEST PERFORMANCE:**
@@ -132,14 +134,15 @@
 - **GPU**: **NVIDIA RTX 5090 (24GB VRAM) - FULLY OPTIMIZED AND TESTED**
   - Also compatible with: RTX 4090, RTX 4080, RTX 3090, RTX 3080
 - **CUDA**: 12.9
-- **Storage**: SSD with 20+ GB free space
-  - **Total after installation**: ~25-30 GB (full installation with all AI models and cache)
-  - **Breakdown**:
-    - Python dependencies: ~8 GB
-    - AI models (Demucs, AudioSR, Whisper): ~10-12 GB
-    - CUDA libraries: ~3-4 GB
-    - Application code: ~100 MB
-    - Temporary cache and workspace: ~3-5 GB
+- **Storage**: SSD with 20+ GB free space recommended
+  - **TOTAL PROJECT SIZE AFTER INSTALLATION: ~10-15 GB**
+  - **Detailed Breakdown**:
+    - Python dependencies (PyTorch, libraries, etc.): ~5-6 GB
+    - AI models (Demucs, AudioSR, Whisper): ~3-4 GB
+    - CUDA 12.9 libraries (if not already installed): ~2-3 GB
+    - Application source code: ~100 MB
+    - Temporary cache and workspace: ~1-2 GB
+  - **Note**: First-time model downloads will require internet connection and may take 10-20 minutes depending on connection speed
 - **Python**: 3.10 (recommended for best compatibility)
 
 ### **AUDIO HARDWARE:**
