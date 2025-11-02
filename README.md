@@ -13,7 +13,7 @@
 
 **IMPORTANT: This project is currently in active development. Features may change, and bugs may exist. Use at your own risk.**
 
-**STORAGE REQUIREMENT: This project requires approximately 10-15 GB of disk space after installation (including dependencies and AI models).**
+**STORAGE REQUIREMENT: This project requires approximately 9.6 GB of disk space after installation (verified installation size).**
 
 [Features](#features) • [Installation](#installation) • [Usage](#usage) • [Requirements](#system-requirements) • [Contributing](#contributing)
 
@@ -123,8 +123,8 @@
 - **RAM**: 16 GB
 - **GPU**: NVIDIA GPU with 8GB VRAM (GTX 1080 / RTX 2060 or better)
 - **CUDA**: 12.9
-- **Storage**: 15+ GB free space required
-  - **TOTAL PROJECT SIZE AFTER INSTALLATION: ~10-12 GB** (basic installation with essential models)
+- **Storage**: 12+ GB free space required
+  - **TOTAL PROJECT SIZE AFTER INSTALLATION: ~9.6 GB** (verified installation size)
 - **Python**: 3.10 or 3.11
 
 ### **RECOMMENDED FOR BEST PERFORMANCE:**
@@ -134,15 +134,22 @@
 - **GPU**: **NVIDIA RTX 5090 (24GB VRAM) - FULLY OPTIMIZED AND TESTED**
   - Also compatible with: RTX 4090, RTX 4080, RTX 3090, RTX 3080
 - **CUDA**: 12.9
-- **Storage**: SSD with 20+ GB free space recommended
-  - **TOTAL PROJECT SIZE AFTER INSTALLATION: ~10-15 GB**
-  - **Detailed Breakdown**:
-    - Python dependencies (PyTorch, libraries, etc.): ~5-6 GB
-    - AI models (Demucs, AudioSR, Whisper): ~3-4 GB
-    - CUDA 12.9 libraries (if not already installed): ~2-3 GB
-    - Application source code: ~100 MB
-    - Temporary cache and workspace: ~1-2 GB
-  - **Note**: First-time model downloads will require internet connection and may take 10-20 minutes depending on connection speed
+- **Storage**: SSD with 15+ GB free space recommended
+  - **TOTAL PROJECT SIZE AFTER INSTALLATION: ~9.6 GB** (verified on actual installation)
+  - **Detailed Breakdown** (measured):
+    - **Python dependencies** (PyTorch, all libraries): **9.5 GB**
+      - PyTorch 2.8.0 + TorchVision + TorchAudio: ~4.2 GB
+      - Demucs, AudioSR, Whisper, transformers: ~2.8 GB
+      - Audio libraries (librosa, sounddevice, pedalboard, etc.): ~1.5 GB
+      - GUI libraries (customtkinter, pygame, matplotlib): ~0.8 GB
+      - Other dependencies (numpy, scipy, etc.): ~0.2 GB
+    - **AI models cache** (PyTorch hub): **463 MB**
+      - Pretrained weights for audio processing
+    - **Application source code**: **313 KB**
+      - Python files, utilities, GUI code
+    - **Models folder**: **34 KB**
+    - **Total**: **~9.6 GB**
+  - **Note**: First-time model downloads require internet and take 10-20 minutes (speed dependent)
 - **Python**: 3.10 (recommended for best compatibility)
 
 ### **AUDIO HARDWARE:**
