@@ -19,6 +19,32 @@
 
 ---
 
+## Screenshots
+
+<div align="center">
+
+### Main Interface
+![Main Interface](screenshots/01_main_interface.png)
+
+### Professional Audio Effects
+![Audio Effects](screenshots/02_audio_effects.png)
+
+### Professional Karaoke Studio
+![Karaoke Studio](screenshots/03_karaoke_studio.png)
+
+### Studio Recording
+![Studio Recording](screenshots/04_studio_recording.png)
+
+### Format Converter
+![Format Converter](screenshots/05_format_converter.png)
+
+### AI Music Analyzer
+![AI Music Analyzer](screenshots/06_ai_music_analyzer.png)
+
+</div>
+
+---
+
 ## Features
 
 ### **Professional Karaoke Studio (ULTRA MODE)**
