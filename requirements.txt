@@ -1,0 +1,82 @@
+# ====================================
+# MUSICIO ULTRA - AI Music Studio
+# Complete Requirements List
+# ====================================
+
+# PyTorch 2.8 with CUDA 12.9 (GPU Support)
+--extra-index-url https://download.pytorch.org/whl/cu129
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.23.0
+
+# ====================================
+# AI Models & Deep Learning
+# ====================================
+demucs==4.0.1                    # AI vocal/instrumental separation (htdemucs_6s)
+audiosr==0.0.7                   # AI audio super-resolution (upsampling)
+transformers==4.30.2             # Hugging Face transformers (Whisper, etc.)
+noisereduce==2.0.1               # Noise reduction using spectral gating
+openai-whisper                   # OpenAI Whisper for lyrics transcription
+
+# ====================================
+# Voice Conversion (RVC)
+# ====================================
+fairseq==0.12.2                  # Facebook's sequence modeling toolkit
+praat-parselmouth==0.4.3         # Praat phonetics analysis
+pyworld==0.3.2                   # WORLD vocoder for pitch/timbre
+faiss-cpu==1.7.4                 # Facebook AI Similarity Search
+
+# ====================================
+# Audio Processing & Effects
+# ====================================
+librosa==0.9.2                   # Audio analysis and feature extraction
+soundfile==0.12.1                # Read/write audio files (WAV, FLAC, etc.)
+pyrubberband==0.3.0              # Time-stretching and pitch-shifting
+pydub==0.25.1                    # Audio manipulation and format conversion
+pedalboard==0.9.4                # Professional audio effects (VST-quality)
+aubio==0.4.9                     # Real-time audio labelling
+essentia==2.1b6.dev1110          # Audio analysis and MIR
+madmom==0.17.dev0                # Music information retrieval
+
+# ====================================
+# Music Theory & Analysis
+# ====================================
+music21==9.1.0                   # Music theory analysis and notation
+pychord==0.6.1                   # Chord detection and progression
+crepe==0.0.13                    # Monophonic pitch tracker
+
+# ====================================
+# Audio I/O & Recording
+# ====================================
+sounddevice==0.4.6               # Real-time audio I/O (low-latency karaoke)
+pyaudio==0.2.13                  # Audio recording interface
+
+# ====================================
+# Format Conversion & Metadata
+# ====================================
+mutagen==1.47.0                  # Audio metadata reading/writing
+ffmpeg-python==0.2.0             # FFmpeg Python bindings
+yt-dlp                           # YouTube downloader (updated fork)
+
+# ====================================
+# GUI & Visualization
+# ====================================
+gradio>=4.40.0                   # Web UI for AI models
+customtkinter==5.2.2             # Modern dark-themed Tkinter
+Pillow==10.2.0                   # Image processing
+pygame==2.5.2                    # Audio playback and waveform
+matplotlib==3.7.3                # Plotting and visualization
+
+# ====================================
+# Utilities & Dependencies
+# ====================================
+numpy<=1.23.5                    # Numerical computing
+scipy>=1.11.0                    # Scientific computing
+tqdm>=4.66.0                     # Progress bars
+requests>=2.31.0                 # HTTP library
+huggingface-hub                  # Hugging Face model hub client
+
+# ====================================
+# Additional Audio Effects
+# ====================================
+reverberate==0.1.0               # Reverb effects

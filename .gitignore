@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Musicio specific
+models/weights/
+temp/
+output/
+karaoke_output/*.wav
+karaoke_output/*.json
+karaoke_output/*.mp3
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+musicio_config.json
+nul
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

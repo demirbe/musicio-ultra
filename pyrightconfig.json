@@ -1,0 +1,19 @@
+{
+  "include": [
+    "gui",
+    "core",
+    "models"
+  ],
+  "exclude": [
+    "venv",
+    "**/__pycache__"
+  ],
+  "reportGeneralTypeIssues": "none",
+  "reportOptionalSubscript": "none",
+  "reportOptionalMemberAccess": "none",
+  "reportArgumentType": "none",
+  "reportIndexIssue": "none",
+  "reportCallIssue": "none",
+  "reportAttributeAccessIssue": "none",
+  "typeCheckingMode": "off"
+}
