@@ -23,23 +23,32 @@
 
 <div align="center">
 
-### Main Interface
-![Main Interface](screenshots/01_main_interface.png)
+### Pitch Shifter & Main Interface
+![Pitch Shifter](screenshots/01_pitch_shifter.png)
 
-### Professional Audio Effects
+### Professional Audio Effects (Reverb, Echo, Chorus, Compressor)
 ![Audio Effects](screenshots/02_audio_effects.png)
 
-### Professional Karaoke Studio
+### Professional Karaoke Studio with VU Meter
 ![Karaoke Studio](screenshots/03_karaoke_studio.png)
 
-### Studio Recording
+### Studio Recording with Real-time Effects
 ![Studio Recording](screenshots/04_studio_recording.png)
 
-### Format Converter
+### Format Converter (MP3, WAV, FLAC, OGG, M4A)
 ![Format Converter](screenshots/05_format_converter.png)
 
-### AI Music Analyzer
+### AI Music Analyzer (Auto Analysis, Notes, Lyrics)
 ![AI Music Analyzer](screenshots/06_ai_music_analyzer.png)
+
+### Audio Visualization (Waveform, Spectrogram, Mel Spectrogram, Chromagram)
+![Audio Visualization](screenshots/07_audio_visualization.png)
+
+### Multi-Track Audio Mixer
+![Multi-Track Mixer](screenshots/08_multitrack_mixer.png)
+
+### Batch Processing
+![Batch Processing](screenshots/09_batch_processing.png)
 
 </div>
 
