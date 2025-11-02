@@ -121,7 +121,8 @@
 - **RAM**: 16 GB
 - **GPU**: NVIDIA GPU with 8GB VRAM (GTX 1080 / RTX 2060 or better)
 - **CUDA**: 12.9
-- **Storage**: 10 GB free space
+- **Storage**: 10 GB free space (minimum installation)
+  - **Total after installation**: ~15-20 GB (including all dependencies and AI models)
 - **Python**: 3.10 or 3.11
 
 ### **RECOMMENDED FOR BEST PERFORMANCE:**
@@ -132,6 +133,13 @@
   - Also compatible with: RTX 4090, RTX 4080, RTX 3090, RTX 3080
 - **CUDA**: 12.9
 - **Storage**: SSD with 20+ GB free space
+  - **Total after installation**: ~25-30 GB (full installation with all AI models and cache)
+  - **Breakdown**:
+    - Python dependencies: ~8 GB
+    - AI models (Demucs, AudioSR, Whisper): ~10-12 GB
+    - CUDA libraries: ~3-4 GB
+    - Application code: ~100 MB
+    - Temporary cache and workspace: ~3-5 GB
 - **Python**: 3.10 (recommended for best compatibility)
 
 ### **AUDIO HARDWARE:**
