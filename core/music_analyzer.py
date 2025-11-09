@@ -104,8 +104,13 @@ class MusicAnalyzer:
             # Beat times
             beat_times = librosa.frames_to_time(beats, sr=sr)
 
-            # Dynamic tempo
-            dtempo = librosa.beat.tempo(onset_envelope=onset_env, sr=sr, aggregate=None)
+            # Tempo stability hesapla (beat intervals'den)
+            if len(beat_times) > 1:
+                beat_intervals = np.diff(beat_times)
+                beat_intervals_bpm = 60.0 / beat_intervals
+                tempo_stability = float(np.std(beat_intervals_bpm))
+            else:
+                tempo_stability = 0.0
 
             logger.info(f"    ✓ BPM: {tempo:.1f}")
 
@@ -113,7 +118,7 @@ class MusicAnalyzer:
                 'bpm': float(tempo),
                 'beats': beat_times.tolist(),
                 'beat_count': len(beats),
-                'tempo_stability': float(np.std(dtempo))
+                'tempo_stability': tempo_stability
             }
 
         except Exception as e:

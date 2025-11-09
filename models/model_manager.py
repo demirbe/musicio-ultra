@@ -140,11 +140,11 @@ class ModelManager:
                         self.demucs_model,
                         wav.unsqueeze(0),
                         device=self.device,
-                        shifts=10,  # 1 -> 10 (daha yüksek kalite, daha fazla GPU kullanımı)
-                        split=False,  # True -> False (Tüm audio'yu tek seferde işle - daha fazla RAM/VRAM)
-                        overlap=0.5,  # 0.25 -> 0.5 (Daha fazla overlap - daha iyi kalite, daha fazla hesaplama)
+                        shifts=1,  # Shift sayısı (daha hızlı için 1, daha kaliteli için 2-5)
+                        split=True,  # Uzun dosyaları parçalara böl (bellek hatası önler)
+                        overlap=0.25,  # Parçalar arası overlap
                         progress=True,
-                        num_workers=16  # 8 -> 16 (Daha fazla paralel thread - CPU/RAM kullanımı artar)
+                        num_workers=8  # Paralel işlem sayısı
                     )[0]
 
             # Kaynak isimleri - Demucs modelinin source sayısına göre
